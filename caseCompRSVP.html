@@ -51,22 +51,22 @@
 	}
 </style>
 
-<form action="https://formspree.io/ecc.psu@gmail.com" name='ecc-case-comp-application' method="POST" enctype="text/plain">
+<form action="https://formspree.io/ecc.psu@gmail.com" name='ecc-case-comp-application' method="POST">
 	<fieldset id='fieldset'>
 		<label id='name'>Name:</label><br>
 		<label id='first'>First</label><input name='First' id='first-input' type='text'> <label id='last'>Last</label><input name='Last' id='last-input' type='text'><br>
 
 		<label id='email'>Penn State Email:</label><br>
-		<input name='Email' id='email-input' type='email'><br>
+		<input name='_replyto' id='email-input' type='email'><br>
 
-		<label name='Major' id='major'>Major(s):</label><br>
-		<input id='major-input' type='text'><br>
+		<label id='major'>Major(s):</label><br>
+		<input name='_Major' id='major-input' type='text'><br>
 
-		<label name='Minor' id='minor'>Minor(s):</label><br>
-		<input id='minor-input' type='text'><br>
+		<label id='minor'>Minor(s):</label><br>
+		<input name='_Minor' id='minor-input' type='text'><br>
 
 		<label id='year-standing'>Year Standing:</label><br>
-		<select name='Year Standing' id='year-standing-input'>
+		<select name='_YearStanding' id='year-standing-input'>
 			<option value='Freshman'>Freshman</option>
 			<option value='Sophomore'>Sophomore</option>
 			<option value='Junior'>Junior</option>
@@ -74,19 +74,19 @@
 		</select><br>
 
 		<label id='bootcamp'>What skills would you like to enhance via the bootcamp? (80-100 words)</label><br>
-		<textarea id='bootcamp-input' name='What Skills' rows=5 cols=50></textarea><br>
+		<textarea id='bootcamp-input' name='_WhatSkills' rows=5 cols=50></textarea><br>
 
 		<label id='teaching-methods'>What teaching methods do you find most engaging? (20-30 words)</label><br>
-		<textarea id='teaching-methods-input' name='What Teaching Methods' rows=3 cols=50></textarea><br>
+		<textarea id='teaching-methods-input' name='_WhatTeachingMethods' rows=3 cols=50></textarea><br>
 
 		<label id='career'>What career do you want to pursue?</label><br>
-		<select name='Intended Career' id='career-input'>
+		<select name='_IntendedCareer' id='career-input'>
 			<option value='consulting'>Consulting</option>
 			<option value='other'>Other</option>
 		</select><br>
 
 		<label id='reference'>How did you hear about the event?</label><br>
-		<select name='How Did you Hear' id='reference-input'>
+		<select name='_HowDidYouHear' id='reference-input'>
 			<option value='instagram'>Instagram</option>
 			<option value='facebook'>Facebook</option>
 			<option value='twitter'>Twitter</option>
@@ -101,8 +101,12 @@
 		</select><br>
 
 		<label id='description'>If other, please describe:</label><br>
-		<input name='Other' id='description-input' type='text'><br>
+		<input name='_Other' id='description-input' type='text'><br>
 
 		<input id='submit-input' type='submit' value='Submit'>
 	</fieldset>
 </form>
+
+<script>
+	
+</script>
