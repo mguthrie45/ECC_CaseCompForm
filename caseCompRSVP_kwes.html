@@ -1,0 +1,110 @@
+<style>
+	textarea {
+		padding: 15px;
+	}
+	body {
+		font-family: 'Arial';
+		font-size: 20px;
+		color: #1e2330;
+	}
+	input[type=text], input[type=email] {
+		height: 40px;
+		padding-left: 15px;
+	}
+	label {
+		margin-right: 10px;
+		font-weight: bold;
+	}
+	select {
+		height: 40px;
+		width: fit-content;
+		padding-left: 8px;
+	}
+
+	input, select, textarea {
+		outline-width: 0;
+		border: 2px solid #1e2330;
+		margin-bottom: 50px;
+		transition: 0.25s ease-out;
+		margin-top: 10px;
+		font-size: 18px;
+	}
+	input:hover, textarea:hover {
+		border-radius: 10px;
+	}
+	#first-input {
+		margin-right: 15px;
+	}
+	#first, #last {
+		font-weight: normal;
+	}
+	#bootcamp-input {
+		width: 30%;
+		height: 200px;
+		/*action="http://formspree.io/ecc.psu@gmail.com"*/
+	}
+	#submit-input {
+		width: 100px;
+		height: 50px;
+		background-color: #1e2330;
+		color: white;
+	}
+</style>
+
+<form action="https://kwes.io/api/foreign/forms/z28BLbVTf3rOLYt8JShZ" class='kwes-form' name='ecc-case-comp-application' method="POST">
+	<fieldset id='fieldset'>
+		<label id='name'>Name:</label><br>
+		<label id='first'>First</label><input name='First' id='first-input' type='text' rules="required|max:255"> <label id='last'>Last</label><input name='Last' id='last-input' type='text' rules="required|max:255"><br>
+
+		<label id='email'>Penn State Email:</label><br>
+		<input name='_replyto' id='email-input' type='email' rules="required|max:255"><br>
+
+		<label id='major'>Major(s):</label><br>
+		<input name='_Major' id='major-input' type='text' rules="required|max:255"><br>
+
+		<label id='minor'>Minor(s):</label><br>
+		<input name='_Minor' id='minor-input' type='text'><br>
+
+		<label id='year-standing'>Year Standing:</label><br>
+		<select name='_YearStanding' id='year-standing-input' rules="required">
+			<option value='Freshman'>Freshman</option>
+			<option value='Sophomore'>Sophomore</option>
+			<option value='Junior'>Junior</option>
+			<option value='Senior'>Senior</option>
+		</select><br>
+
+		<label id='bootcamp'>What skills would you like to enhance via the bootcamp? (80-100 words)</label><br>
+		<textarea id='bootcamp-input' name='_WhatSkills' rows=5 cols=50 rules="required"></textarea><br>
+
+		<label id='teaching-methods'>What teaching methods do you find most engaging? (20-30 words)</label><br>
+		<textarea id='teaching-methods-input' name='_WhatTeachingMethods' rows=3 cols=50 rules="required"></textarea><br>
+
+		<label id='career'>What career do you want to pursue?</label><br>
+		<select name='_IntendedCareer' id='career-input' rules="required">
+			<option value='consulting'>Consulting</option>
+			<option value='other'>Other</option>
+		</select><br>
+
+		<label id='reference'>How did you hear about the event?</label><br>
+		<select name='_HowDidYouHear' id='reference-input' rules="required">
+			<option value='instagram'>Instagram</option>
+			<option value='facebook'>Facebook</option>
+			<option value='twitter'>Twitter</option>
+			<option value='linkedin'>LinkedIn</option>
+			<option value='newsletter'>E-CC Newsletter</option>
+			<option value='deptnewsletter'>Department Newsletter</option>
+			<option value='otherclubs'>Other Clubs</option>
+			<option value='oncampusmarketing'>On Campus Marketing</option>
+			<option value='professors'>Professors</option>
+			<option value='associate'>I'm an Associate</option>
+			<option value='other'>Other (please describe)</option>
+		</select><br>
+
+		<label id='description'>If other, please describe:</label><br>
+		<input name='_Other' id='description-input' type='text'><br>
+
+		<input id='submit-input' type='submit' value='Submit'>
+	</fieldset>
+</form>
+
+<script src="https://kwes.io/v2/kwes-script.js" defer></script>
